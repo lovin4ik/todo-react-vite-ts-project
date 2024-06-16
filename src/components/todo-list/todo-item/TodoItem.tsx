@@ -12,7 +12,7 @@ const TodoItem: FC<ToDoProps> = ({ note, remove }) => {
 	return (
 		<details className={styles.wrapper}>
 			<summary className={styles.summary}>
-				{note.title}
+				<span>{note.id}.{note.title}</span>
 				<Trash2 className={styles.trash} onClick={() => remove(note)} />
 			</summary>
 			<p>{note.description}</p>

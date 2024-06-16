@@ -5,7 +5,10 @@
 	}
 }
 .summary {
-	@apply text-xl font-bold transition-[margin] duration-150 ease-in-out relative cursor-pointer;
+	@apply flex  text-xl font-bold transition-[margin] duration-150 ease-in-out relative cursor-pointer ;
+	> span {
+		@apply max-w-[350px] overflow-hidden block overflow-ellipsis;
+	}
 }
 .wrapper[open] > .summary {
 	margin-bottom: 10px;
