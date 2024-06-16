@@ -1,0 +1,15 @@
+.wrapper {
+	@apply w-[450px] bg-black/10 px-4 py-3 rounded-lg text-lg font-medium relative mb-3;
+	> p {
+		@apply pt-4;
+	}
+}
+.summary {
+	@apply text-xl font-bold transition-[margin] duration-150 ease-in-out relative cursor-pointer;
+}
+.wrapper[open] > .summary {
+	margin-bottom: 10px;
+}
+.trash {
+	@apply absolute right-0 top-0;
+}

@@ -1,0 +1,15 @@
+.form {
+	@apply flex flex-col items-center;
+}
+.inp {
+	@apply block mb-4 bg-black/10 px-3 py-2 rounded-lg w-full outline-none border border-solid border-transparent transition-colors duration-300;
+	&:focus {
+		@apply border-purple-500;
+	}
+	&:hover {
+		@apply border-purple-500;
+	}
+}
+.btn {
+	@apply bg-zinc-600 px-3 py-4 text-white rounded-xl;
+}

@@ -1,0 +1,13 @@
+.wrapper {
+	@apply flex flex-col items-center mt-6 relative w-full overflow-auto max-h-[200px];
+	&::after {
+		content: '';
+		@apply absolute w-full border border-solid top-[-10px] border-zinc-300;
+	}
+}
+.title {
+	@apply text-zinc-900 text-2xl font-medium mb-7;
+}
+.todos {
+	@apply flex flex-col gap-3;
+}
