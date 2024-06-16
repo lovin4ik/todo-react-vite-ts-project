@@ -18,7 +18,9 @@ const Todo = () => {
 	const [search, setSearch] = useState('');
 
 	const searchToDo = useMemo(() => {
-		return todos.filter((note) => note.title.toLowerCase().includes(search));
+		return todos.filter((note: INotes) =>
+			note.title.toLowerCase().includes(search)
+		);
 	}, [search, todos]);
 
 	const createToDo = () => {
@@ -29,7 +31,7 @@ const Todo = () => {
 	};
 
 	const removeToDo = (note: INotes) => {
-		setTodos(todos.filter((p) => p.id !== note.id));
+		setTodos(todos.filter((p: INotes) => p.id !== note.id));
 	};
 
 	return (
@@ -38,7 +40,7 @@ const Todo = () => {
 			<SearchField
 				placeholder='Search'
 				value={search}
-				onChange={(e: string) => {
+				onChange={(e: any) => {
 					setSearch(e.target.value);
 				}}
 			/>

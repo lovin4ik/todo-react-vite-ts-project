@@ -5,7 +5,7 @@ import TodoItem from './todo-item/TodoItem';
 
 interface ListProps {
 	notes: INotes[];
-	remove: () => void;
+	remove: any;
 }
 
 const TodoList: FC<ListProps> = ({ notes, remove }) => {
@@ -16,7 +16,7 @@ const TodoList: FC<ListProps> = ({ notes, remove }) => {
 				{notes.length
 					? notes.map((note) => (
 							<TodoItem key={note.id} note={note} remove={remove} />
-					  ))
+					))
 					: 'ToDo not found'}
 			</div>
 		</div>

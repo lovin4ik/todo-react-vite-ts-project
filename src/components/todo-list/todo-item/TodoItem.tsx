@@ -5,7 +5,7 @@ import { Trash2 } from 'lucide-react';
 
 interface ToDoProps {
 	note: INotes;
-	remove: () => void;
+	remove: (note: INotes) => void;
 }
 
 const TodoItem: FC<ToDoProps> = ({ note, remove }) => {
