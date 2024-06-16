@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   base: "/todo-react-vite-ts-project/",
   plugins: [react()],
+  server: {
+    open: true,
+  },
 })
