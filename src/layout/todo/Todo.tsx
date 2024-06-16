@@ -7,13 +7,7 @@ import { INotes } from '../../types/types';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 const Todo = () => {
-	const [todos, setTodos] = useLocalStorage('todos', [
-		{
-			id: 1,
-			title: 'nigga',
-			description: 'no',
-		},
-	]);
+	const [todos, setTodos] = useLocalStorage('todos', []);
 	const [inputs, setInputs] = useState({ title: '', description: '' });
 	const [search, setSearch] = useState('');
 
