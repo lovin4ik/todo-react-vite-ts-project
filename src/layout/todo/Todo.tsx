@@ -45,7 +45,6 @@ const Todo = () => {
 				}}
 			/>
 			<TodoList notes={searchToDo} remove={removeToDo} />
-			{localStorage.getItem('ToDo') ? <></> : <button>Load</button>}
 		</div>
 	);
 };
